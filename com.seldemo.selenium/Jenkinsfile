@@ -1,0 +1,8 @@
+node{
+  stage('SCM Checkout'){
+    git'https://github.com/github-lokesh/MavenSeleniumProject_10_Sept'
+  }
+  stage('Compile-Package'){
+  sh 'mvn package'
+  }
+}
